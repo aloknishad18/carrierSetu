@@ -181,7 +181,7 @@ const AppRoutes = () => {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL || '/carrierSetu/'}>
       <AppProvider>
         <AppRoutes />
         {/* Global Modals & Notifications */}
