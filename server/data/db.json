@@ -1,0 +1,182 @@
+{
+  "users": [
+    {
+      "id": "DEMO-STU-001",
+      "email": "aarav.sharma@iitd.ac.in",
+      "emailVerified": true,
+      "name": "Aarav Sharma",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "organization": "Indian Institute of Technology, Delhi",
+      "createdAt": "2026-09-21T16:43:29.684Z",
+      "updatedAt": "2026-09-21T16:43:29.685Z"
+    },
+    {
+      "id": "DEMO-IND-002",
+      "email": "priya.sen@techinnovations.in",
+      "emailVerified": true,
+      "name": "Priya Sen",
+      "role": "industry",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "organization": "Tech Innovations Lab",
+      "createdAt": "2026-09-21T16:43:29.685Z",
+      "updatedAt": "2026-09-21T16:43:29.685Z"
+    },
+    {
+      "id": "DEMO-ACA-003",
+      "email": "r.kulkarni@vjti.ac.in",
+      "emailVerified": true,
+      "name": "Dr. Ramesh Kulkarni",
+      "role": "academia",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "organization": "Veermata Jijabai Technological Institute",
+      "createdAt": "2026-09-21T16:43:29.685Z",
+      "updatedAt": "2026-09-21T16:43:29.685Z"
+    },
+    {
+      "id": "DEMO-INS-004",
+      "email": "dean.acad@nit.edu.in",
+      "emailVerified": true,
+      "name": "Dr. Sunita Rao",
+      "role": "institution",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "organization": "National Institute of Technology",
+      "createdAt": "2026-09-21T16:43:29.685Z",
+      "updatedAt": "2026-09-21T16:43:29.685Z"
+    },
+    {
+      "id": "DEMO-GOV-005",
+      "email": "rajesh.verma@gov.in",
+      "emailVerified": true,
+      "name": "Rajesh Verma, IAS",
+      "role": "governance",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+      "organization": "Ministry of Education",
+      "createdAt": "2026-09-21T16:43:29.685Z",
+      "updatedAt": "2026-09-21T16:43:29.685Z"
+    },
+    {
+      "id": "DEMO-STU-001",
+      "email": "student@careersetuu.demo",
+      "passwordHash": "e1d3c2ab0e2918a4d53919bbdc095f7a71d62f057f8af39b1a49f23158b451d1",
+      "emailVerified": true,
+      "name": "Aarav Sharma",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "organization": "Indian Institute of Technology, Delhi",
+      "createdAt": "2026-09-23T08:15:42.034Z",
+      "updatedAt": "2026-09-23T08:15:42.035Z"
+    },
+    {
+      "id": "DEMO-IND-002",
+      "email": "industry@careersetuu.demo",
+      "passwordHash": "5106aeba6d0b393755b611e009a5dbd258965c74687ffcd843811bc3d7ced5cf",
+      "emailVerified": true,
+      "name": "Priya Sen",
+      "role": "industry",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "organization": "Tech Innovations Lab",
+      "createdAt": "2026-09-23T08:15:42.035Z",
+      "updatedAt": "2026-09-23T08:15:42.035Z"
+    },
+    {
+      "id": "DEMO-ACA-003",
+      "email": "academia@careersetuu.demo",
+      "passwordHash": "71edf280e20d2ff498da9fd38d6ef8a09a5bb7ed2f1e257f6b7e2138cdf9c0bc",
+      "emailVerified": true,
+      "name": "Dr. Ramesh Kulkarni",
+      "role": "academia",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "organization": "Veermata Jijabai Technological Institute",
+      "createdAt": "2026-09-23T08:15:42.035Z",
+      "updatedAt": "2026-09-23T08:15:42.035Z"
+    },
+    {
+      "id": "DEMO-INS-004",
+      "email": "institution@careersetuu.demo",
+      "passwordHash": "6e93ffa4459f7aae15076575ef778c0fda85090073ea5bc156e3108b190a6cb9",
+      "emailVerified": true,
+      "name": "Dr. Sunita Rao",
+      "role": "institution",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "organization": "National Institute of Technology",
+      "createdAt": "2026-09-23T08:15:42.035Z",
+      "updatedAt": "2026-09-23T08:15:42.035Z"
+    },
+    {
+      "id": "DEMO-GOV-005",
+      "email": "governance@careersetuu.demo",
+      "passwordHash": "91e4456e04ded6695fd8df27956c4efe3d171346a18369c28f6d1fde7c5d8a49",
+      "emailVerified": true,
+      "name": "Rajesh Verma, IAS",
+      "role": "governance",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+      "organization": "Ministry of Education",
+      "createdAt": "2026-09-23T08:15:42.035Z",
+      "updatedAt": "2026-09-23T08:15:42.035Z"
+    }
+  ],
+  "otps": {
+    "l0999619@gmail.com": {
+      "email": "l0999619@gmail.com",
+      "otpHash": "b1be3f4affd5a397b6d50762c3551e51db0432653eb97fe47bcac16375ee106d",
+      "createdAt": 1790150011131,
+      "expiresAt": 1790150311131,
+      "attempts": 0,
+      "resendCount": 1,
+      "lastResendAt": 1790150011131
+    },
+    "aloknishadc@gmail.com": {
+      "email": "aloknishadc@gmail.com",
+      "otpHash": "5e495a8da0ef0751152190fb2518e116cf31c21ed0cc2b9ad30a25c32ab8a85e",
+      "createdAt": 1790150098548,
+      "expiresAt": 1790150398548,
+      "attempts": 0,
+      "resendCount": 2,
+      "lastResendAt": 1790150098548
+    }
+  },
+  "sessions": {
+    "5aa2af527c1f9553dfc7431b3c4c01413e80a5cdbc26ae7e31151bbbfca9bcf0": {
+      "id": "5aa2af527c1f9553dfc7431b3c4c01413e80a5cdbc26ae7e31151bbbfca9bcf0",
+      "userId": "DEMO-STU-001",
+      "createdAt": 1790151387888,
+      "expiresAt": 1790756187888
+    },
+    "bcf8d4b351ac909974aae4e51531926c6113436fd66a2ef6678eea02e64ef777": {
+      "id": "bcf8d4b351ac909974aae4e51531926c6113436fd66a2ef6678eea02e64ef777",
+      "userId": "DEMO-STU-001",
+      "createdAt": 1790151495586,
+      "expiresAt": 1790756295586
+    },
+    "b017dd0be4c5b9a64d199bab9d1bd74678f6f5de730fc7727fffb8de8e6e9266": {
+      "id": "b017dd0be4c5b9a64d199bab9d1bd74678f6f5de730fc7727fffb8de8e6e9266",
+      "userId": "DEMO-IND-002",
+      "createdAt": 1790151495592,
+      "expiresAt": 1790756295592
+    },
+    "f315d21631489f9eb17b9f8505da94daaf9fa151d050acd7c77b844206f96c91": {
+      "id": "f315d21631489f9eb17b9f8505da94daaf9fa151d050acd7c77b844206f96c91",
+      "userId": "DEMO-ACA-003",
+      "createdAt": 1790151495597,
+      "expiresAt": 1790756295597
+    },
+    "9187fef333d124e62d40aba59a34d03eeac739dadf5d6743d4684dfea969abbe": {
+      "id": "9187fef333d124e62d40aba59a34d03eeac739dadf5d6743d4684dfea969abbe",
+      "userId": "DEMO-INS-004",
+      "createdAt": 1790151495601,
+      "expiresAt": 1790756295601
+    },
+    "6af8fab22591f07a36bb47467cf986ad60e2f00c72b86edd5c630af2a69930cb": {
+      "id": "6af8fab22591f07a36bb47467cf986ad60e2f00c72b86edd5c630af2a69930cb",
+      "userId": "DEMO-GOV-005",
+      "createdAt": 1790151495606,
+      "expiresAt": 1790756295606
+    }
+  },
+  "studentProfiles": {},
+  "industryProfiles": {},
+  "academiaProfiles": {},
+  "institutionProfiles": {},
+  "governanceProfiles": {}
+}

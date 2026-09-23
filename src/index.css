@@ -1,0 +1,566 @@
+/* ==========================================================================
+   CAREERSETU (SIH26044) - MODERN BHARAT CAREER ECOSYSTEM
+   Enhanced Design System & Global Styles
+   Preserving Warm Ivory, Saffron, Deep Indigo, and High-Contrast Presentation Readability
+   ========================================================================== */
+
+:root {
+  /* Core Color Palette */
+  --saffron-primary: #E87516;
+  --saffron-light: #FFF5EB;
+  --saffron-hover: #D0640F;
+  --warm-orange: #F59E0B;
+  --warm-orange-light: #FEF3C7;
+  --bharat-red: #B91C1C;
+  --bharat-red-light: #FEE2E2;
+  --deep-indigo: #312E81;
+  --indigo-surface: #EEF2FF;
+  --indigo-light: #4338CA;
+  --govt-ink: #1C1B1A;
+  --govt-ink-light: #2A2826;
+  --warm-ivory: #FAF9F6;
+  --warm-ivory-alt: #F4F1EA;
+  --pure-white: #FFFFFF;
+  
+  /* Text Readability Enhancement (Strong contrast for large projectors & SIH evaluation) */
+  --muted-text: #4B4845;       /* Increased contrast from #6B6966 */
+  --muted-dark: #2A2826;       /* Crisp, legible body text */
+  --light-border: #E5E0D8;
+  --border-focus: #94A3B8;
+  --success-green: #15803D;
+  --success-light: #DCFCE7;
+
+  /* Gradients */
+  --gradient-saffron-orange: linear-gradient(135deg, #E87516 0%, #F59E0B 100%);
+  --gradient-hero-accent: linear-gradient(135deg, #E87516 0%, #D97706 50%, #B91C1C 100%);
+  --gradient-indigo-dark: linear-gradient(145deg, #1E1B4B 0%, #312E81 100%);
+  --gradient-card-glow: linear-gradient(180deg, rgba(232, 117, 22, 0.04) 0%, rgba(255, 255, 255, 0.95) 100%);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(28, 27, 26, 0.05);
+  --shadow-sm: 0 2px 5px rgba(28, 27, 26, 0.07);
+  --shadow-md: 0 6px 18px -2px rgba(28, 27, 26, 0.09), 0 2px 6px -1px rgba(28, 27, 26, 0.04);
+  --shadow-lg: 0 14px 30px -4px rgba(28, 27, 26, 0.11), 0 4px 14px -2px rgba(28, 27, 26, 0.06);
+  --shadow-xl: 0 22px 44px -8px rgba(28, 27, 26, 0.13), 0 8px 18px -4px rgba(28, 27, 26, 0.07);
+  --shadow-saffron: 0 8px 24px -4px rgba(232, 117, 22, 0.28);
+  --shadow-indigo: 0 8px 24px -4px rgba(49, 46, 129, 0.25);
+
+  /* Typography */
+  --font-heading: 'Manrope', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hindi: 'Noto Sans Devanagari', 'Inter', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+}
+
+/* ==========================================================================
+   DARK MODE PALETTE & THEME SYSTEM
+   ========================================================================== */
+[data-theme="dark"], html.dark, body.dark {
+  --warm-ivory: #0B0B0D;
+  --warm-ivory-alt: #111114;
+  --pure-white: #17171A;
+  --govt-ink: #F5F5F4;
+  --govt-ink-light: #E7E5E4;
+  --muted-text: #A8A6A3;
+  --muted-dark: #D6D3D1;
+  --light-border: rgba(255, 255, 255, 0.10);
+  --border-focus: #6366F1;
+  --saffron-primary: #F97316;
+  --saffron-light: rgba(249, 115, 22, 0.14);
+  --saffron-hover: #EA580C;
+  --deep-indigo: #6366F1;
+  --indigo-surface: #1E1E22;
+  --indigo-light: #818CF8;
+  --success-green: #22C55E;
+  --success-light: rgba(34, 197, 94, 0.15);
+  --bharat-red: #EF4444;
+  --bharat-red-light: rgba(239, 68, 68, 0.15);
+  
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.8);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.9);
+  --shadow-saffron: 0 8px 28px -4px rgba(249, 115, 22, 0.4);
+  --shadow-indigo: 0 8px 28px -4px rgba(99, 102, 241, 0.4);
+
+  color-scheme: dark;
+}
+
+/* Reset & Base Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--warm-ivory);
+  color: var(--govt-ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 350ms cubic-bezier(0.16, 1, 0.3, 1), color 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.lang-hi {
+  font-family: var(--font-hindi);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--govt-ink);
+  line-height: 1.22;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+body.lang-hi h1,
+body.lang-hi h2,
+body.lang-hi h3,
+body.lang-hi h4,
+body.lang-hi h5,
+body.lang-hi h6 {
+  font-family: var(--font-hindi);
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+p {
+  color: var(--muted-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Subtle Indian Architectural Heritage Patterns (strictly 2% to 4% opacity) */
+.bharat-bg-pattern {
+  background-image: 
+    radial-gradient(var(--saffron-primary) 0.75px, transparent 0.75px),
+    linear-gradient(to right, rgba(49, 46, 129, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(49, 46, 129, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px, 64px 64px, 64px 64px;
+}
+
+.bharat-stepwell-pattern {
+  background-image: 
+    linear-gradient(45deg, rgba(232, 117, 22, 0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(232, 117, 22, 0.03) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(49, 46, 129, 0.025) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(49, 46, 129, 0.025) 75%);
+  background-size: 40px 40px;
+}
+
+.bharat-mandala-pattern {
+  background-image: radial-gradient(circle at 50% 50%, rgba(232, 117, 22, 0.035) 0%, transparent 65%);
+}
+
+.dark-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Container & Layout */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Saffron Gradient Text Highlight */
+.gradient-text {
+  background: linear-gradient(135deg, #E87516 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gradient-indigo-text {
+  background: linear-gradient(135deg, #312E81 0%, #4338CA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Interactive Card Hover Styles */
+.interactive-card {
+  background: var(--pure-white);
+  border: 1px solid var(--light-border);
+  border-radius: var(--radius-lg);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.interactive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(232, 117, 22, 0.35);
+}
+
+/* Primary and Secondary Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--saffron-primary);
+  color: var(--pure-white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 14px rgba(232, 117, 22, 0.35);
+  transition: all var(--transition-base);
+}
+
+.btn-primary:hover {
+  background-color: var(--saffron-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 117, 22, 0.45);
+}
+
+.btn-primary:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--pure-white);
+  color: var(--govt-ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border: 1px solid var(--light-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  transition: all var(--transition-base);
+}
+
+.btn-secondary:hover {
+  border-color: var(--saffron-primary);
+  color: var(--saffron-primary);
+  background-color: var(--saffron-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+.btn-indigo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--deep-indigo);
+  color: var(--pure-white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 14px rgba(49, 46, 129, 0.3);
+  transition: all var(--transition-base);
+}
+
+.btn-indigo:hover {
+  background-color: #26236b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(49, 46, 129, 0.4);
+}
+
+.btn-arrow {
+  transition: transform var(--transition-fast);
+}
+
+/* Badges with High Contrast */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.badge-saffron {
+  background-color: var(--saffron-light);
+  color: #C25E0D;
+  border: 1px solid rgba(232, 117, 22, 0.3);
+}
+
+.badge-indigo {
+  background-color: var(--indigo-surface);
+  color: var(--deep-indigo);
+  border: 1px solid rgba(49, 46, 129, 0.2);
+}
+
+.badge-green {
+  background-color: var(--success-light);
+  color: #0F6830;
+  border: 1px solid rgba(21, 128, 61, 0.25);
+}
+
+.badge-orange {
+  background-color: var(--warm-orange-light);
+  color: #92400E;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-red {
+  background-color: var(--bharat-red-light);
+  color: var(--bharat-red);
+  border: 1px solid rgba(185, 28, 28, 0.25);
+}
+
+/* Animations & Motion */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes floatGentleDelayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulseBorder {
+  0%, 100% {
+    border-color: rgba(232, 117, 22, 0.25);
+  }
+  50% {
+    border-color: rgba(232, 117, 22, 0.7);
+  }
+}
+
+@keyframes travelPathDash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentleDelayed 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-pulse-border {
+  animation: pulseBorder 3s ease-in-out infinite;
+}
+
+.fade-in {
+  animation: fadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stakeholder Portal Route Transitions */
+@keyframes portalPageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portal-page-transition {
+  animation: portalPageFadeIn 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: opacity, transform;
+}
+
+.animated-dash-line {
+  stroke-dasharray: 6 6;
+  animation: travelPathDash 2s linear infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Accessibility Focus Ring */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--saffron-primary);
+  outline-offset: 2px;
+}
+
+/* Premium Dark Mode & Hero Animation Utilities */
+.hero-glow-dark {
+  background: radial-gradient(circle at 60% 40%, rgba(99, 102, 241, 0.15) 0%, rgba(249, 115, 22, 0.08) 35%, transparent 70%);
+}
+
+.hero-glow-light {
+  background: radial-gradient(circle at 60% 30%, rgba(232, 117, 22, 0.08) 0%, rgba(49, 46, 129, 0.05) 45%, transparent 75%);
+}
+
+.card-glass {
+  background: var(--pure-white);
+  border: 1px solid var(--light-border);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.card-glass:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.dark .card-glass {
+  background: rgba(23, 23, 26, 0.85);
+  backdrop-filter: blur(12px);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .card-glass:hover {
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(249, 115, 22, 0.15);
+}
+
+/* Node pulse & connection line animations */
+@keyframes nodePulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.4);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 24px rgba(249, 115, 22, 0.7);
+  }
+}
+
+.animate-node-pulse {
+  animation: nodePulse 3s ease-in-out infinite;
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.animate-dash-flow {
+  stroke-dasharray: 6 6;
+  animation: dashFlow 1.8s linear infinite;
+}
+
+/* Scroll Storytelling Badge */
+.narrative-pill {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all var(--transition-base);
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
