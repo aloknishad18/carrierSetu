@@ -180,8 +180,9 @@ const AppRoutes = () => {
 };
 
 export default function App() {
+  const baseName = (import.meta.env.BASE_URL || '/carrierSetu').replace(/\/$/, '');
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL || '/carrierSetu/'}>
+    <BrowserRouter basename={baseName}>
       <AppProvider>
         <AppRoutes />
         {/* Global Modals & Notifications */}
